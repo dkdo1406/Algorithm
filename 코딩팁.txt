@@ -1,0 +1,25 @@
+입력데이터 입력안하고 텍스트로 받아서 사용하기
+import sys
+sys.stdin = open('aaa.txt', 'r')
+# sys.stdout = open('output.out', 'w')
+
+
+RecursionError: maximum recursion depth exceeded in comparison
+재귀함수를 1000번이상 사용하였다.
+
+해결법 : import sys; sys.setrecursionlimit(10000)
+
+BFS(Breadth First Search) 너비 우선 탐색
+큐를 list타입으로 사용해 자료를 append, pop을 사용한다면 시간복잡도가 O(N)이나오게 되어 느리다.
+따라서 collections 라이브러리의 deque를 사용하는것이 현명한 방법이다.
+또한 인접노드 중 방문하지 않았던 노드를 큐에 넣을 때 set을 사용하면 쉽게 구현가능하다.
+
+set : 순서가 없고 집합안에 값은 유니크하다(유일하다)
+mutable 객체이다.
+mutable:값이 변함 ex) List, Dictionary
+immutable:값이 변하지 않음 ex) Number, String, Tuple
+중괄호를 사용하는 딕셔너리와 유사하지만 키가 없다.
+원소추가는 add를 사용한다. k.add(1)
+여러개를 추가할경우 update를 사용 k.update([3,4,5])
+원소제거는 remove를 사용 k.remove(3)
+존재와 상관없이 제거 discard(item) k.discard(3) 에러가 안뜸
