@@ -9,6 +9,11 @@ RecursionError: maximum recursion depth exceeded in comparison
 
 해결법 : import sys; sys.setrecursionlimit(10000)
 
+ZeroDivisionError: division by zero
+0으로 나누려고 할 때 발생
+
+해결법 0으로 나누지 못하게 조건 걸기
+
 BFS(Breadth First Search) 너비 우선 탐색
 큐를 list타입으로 사용해 자료를 append, pop을 사용한다면 시간복잡도가 O(N)이나오게 되어 느리다.
 따라서 collections 라이브러리의 deque를 사용하는것이 현명한 방법이다.
@@ -23,3 +28,10 @@ immutable:값이 변하지 않음 ex) Number, String, Tuple
 여러개를 추가할경우 update를 사용 k.update([3,4,5])
 원소제거는 remove를 사용 k.remove(3)
 존재와 상관없이 제거 discard(item) k.discard(3) 에러가 안뜸
+
+zip(*) : unpacking list
+
+참고 https://wikidocs.net/64
+lambda 인자 : 표현식
+(lambda x,y: x + y)(10, 20)
+30
