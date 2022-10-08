@@ -1,21 +1,30 @@
-from  itertools import combinations
-from itertools import  permutations
 N = int(input())
-
-graph = [list(map(int,input().split())) for _ in range(N)]
-playerIdx = [i for i in range(N)]
-totalTeam = set(playerIdx)
-
-answer = 10000000
-for i in combinations(playerIdx,N//2):
-    AtemaPoint = 0
-    BteamPoint = 0
-    Ateam = i
-    Bteam = tuple(totalTeam - set(Ateam))
-
-    for i2, j2 in permutations(Ateam,2):
-        AtemaPoint += graph[i2][j2]
-    for i3, j3 in permutations(Bteam, 2):
-        BteamPoint += graph[i3][j3]
-    answer = min(abs(AtemaPoint - BteamPoint), answer)
+graph = [list(map(int, input().split())) for _ in range(N)]
+player = [i for i in range(N)]
+totalTeam = set(player)
+def combi(arr, r):
+    for i in range(len(arr)):
+        if r == 1:
+            yield [arr[i]]
+        else:
+            for next in combi(arr[i+1:], r-1):
+                yield  [arr[i]] + next
+def permu(arr, r):
+    for i in range(len(arr)):
+        if r == 1:
+            yield [arr[i]]
+        else:
+            for next in permu(arr, r-1):
+                yield [arr[i]] + next
+answer = 10000000001
+for i in combi(player,N//2):
+        teamA = tuple(i)
+        teamB = tuple(totalTeam - set(i))
+        resultA = 0
+        resultB = 0
+        for j,k in permu(teamA,2):
+            resultA += graph[j][k]
+        for j, k in permu(teamB,2):
+            resultB += graph[j][k]
+        answer = min(abs(resultA - resultB), answer)
 print(answer)
