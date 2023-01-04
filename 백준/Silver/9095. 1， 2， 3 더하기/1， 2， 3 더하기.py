@@ -1,13 +1,22 @@
-dp = [0 for i in range(11)]
-dp[1] = 1
-dp[2] = 2
-dp[3] = 4
-
-for i in range(4, 11):
-    dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
-
 n = int(input())
+arr = []
+for _ in range(n):
+    arr.append(int(input()))
 
-for i in range(n):
-    m = int(input())
-    print(dp[m])
+for m in arr:
+    arr = [0] * 4
+    if m < 4:
+        arr[0] = 0
+        arr[1] = 1
+        arr[2] = 2
+        arr[3] = 4
+        print(arr[m])
+        continue
+    arr = [0] * (m+1)
+    arr[0] = 0
+    arr[1] = 1
+    arr[2] = 2
+    arr[3] = 4
+    for i in range(4, m+1):
+        arr[i] = arr[i-1] + arr[i-2] + arr[i-3]
+    print(arr[m])
