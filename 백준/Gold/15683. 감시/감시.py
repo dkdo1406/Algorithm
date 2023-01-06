@@ -1,121 +1,93 @@
 import copy
 
-N, M = list(map(int, input().split()))
-graph = [list(map(int, input().split())) for _ in range(N)]
+n, m = list(map(int, input().split()))
+graph = [list(map(int, input().split())) for _ in range(n)]
+
 cctv = []
-cctv_5 = []
-cctv_2 = []
-cctv_else = []
-visited = []
-new_graph = [[0 for _ in range(M)] for _ in range(N)]
-for r in range(N):
-    for c in range(M):
-        if graph[r][c] == 0 or graph[r][c] == 6:
-            continue
-        else:
+for r in range(n):
+    for c in range(m):
+        if 0 < graph[r][c] < 6:
             cctv.append([r, c])
-        if graph[r][c] == 5:
-            cctv_5.append([r, c])
-        elif graph[r][c] == 2:
-            cctv_2.append([r, c])
-        else:
-            cctv_else.append([r, c, graph[r][c]])
-cctv_else.sort(key = lambda x: x[2], reverse= True)
-cctv1 = [[(1,0)],[(-1,0)],[(0,1)],[(0,-1)]]
-cctv2 = [[(1,0),(-1,0)],[(0,1),(0,-1)]]
-cctv3 = [[(1,0),(0,-1)], [(1,0),(0,1)], [(-1, 0), (0, 1)], [(-1,0), (0,-1)]]
-cctv4 = [[(1,0), (-1,0), (0,1)], [(1,0), (-1,0),(0,-1)], [(0,1),(0,-1),(1,0)], [(0,1),(0,-1),(-1,0)]]
-cctv5 = [(1,0),(-1,0),(0,1),(0,-1)]
+answer = 65
+cctv1 = [[1,0],[-1,0],[0,1],[0,-1]]
+cctv5 = [[1,0],[-1,0],[0,1],[0,-1]]
+cctv2 = [[[1,0],[-1,0]],[[0,1],[0,-1]]]
+cctv3 = [[[-1,0],[0,1]], [[0,1],[1,0]], [[1,0],[0,-1]], [[0,-1],[-1,0]]]
+cctv4 = [[[-1,0],[0,-1],[1,0]], [[0,-1],[1,0],[0,1]], [[1,0],[0,1],[-1,0]], [[0,1],[-1,0],[0,-1]]]
 
-q = []
-answer = 100
-def checkBlank(new_graph):
+def DFS(L, graph):
     global answer
-    cnt = 0
-    for i in range(N):
-        for j in range(M):
-            if new_graph[i][j] == 0:
-                cnt += 1
-    answer = min(answer, cnt)
-
-def DFS(L, new_graph):
     if L == len(cctv):
-        checkBlank(new_graph)
+        cnt = 0
+        for r in range(n):
+            for c in range(m):
+                if graph[r][c] == 0:
+                    cnt += 1
+        answer = min(answer, cnt)
         return
     r, c = cctv[L]
-
-    if new_graph[r][c] == 5:
-        temp_graph = copy.deepcopy(new_graph)
-        for i in range(4):
-            for j in range(1,9):
-                nr = cctv5[i][0]*j + r
-                nc = cctv5[i][1]*j + c
-                if nr < 0 or nr >= N or nc < 0 or nc >= M or temp_graph[nr][nc] == 6:
+    if graph[r][c] == 1:
+        for i in cctv1:
+            new_graph = copy.deepcopy(graph)
+            for idx in range(1,9):
+                nr = r + i[0]*idx
+                nc = c + i[1]*idx
+                if nr < 0 or nr >= n or nc < 0 or nc >= m or new_graph[nr][nc] == 6:
                     break
-                if temp_graph[nr][nc] == 0:
-                    temp_graph[nr][nc] = '#'
-                else:
-                    continue
-        DFS(L+1, temp_graph)
-    if new_graph[r][c] == 4:
-        for i in range(4):
-            temp_graph = copy.deepcopy(new_graph)
-            for j in range(3):
-                for k in range(1, 9):
-                    nr = cctv4[i][j][0]*k + r
-                    nc = cctv4[i][j][1]*k + c
-                    if nr < 0 or nr >= N or nc < 0 or nc >= M or temp_graph[nr][nc] == 6:
-                        break
-                    if temp_graph[nr][nc] == 0:
-                        temp_graph[nr][nc] = '#'
-                    else:
-                        continue
-            DFS(L+1, temp_graph)
-    if new_graph[r][c] == 3:
-        for i in range(4):
-            temp_graph = copy.deepcopy(new_graph)
-            for j in range(2):
-                for k in range(1, 9):
-                    nr = cctv3[i][j][0]*k + r
-                    nc = cctv3[i][j][1]*k + c
-                    if nr < 0 or nr >= N or nc < 0 or nc >= M or temp_graph[nr][nc] == 6:
-                        break
-                    if temp_graph[nr][nc] == 0:
-                        temp_graph[nr][nc] = '#'
-                    else:
-                        continue
-            DFS(L + 1, temp_graph)
+                if new_graph[nr][nc] == 0:
+                    new_graph[nr][nc] = '#'
+            DFS(L+1, new_graph)
 
-    if new_graph[r][c] == 2:
-        for i in range(2):
-            temp_graph = copy.deepcopy(new_graph)
-            for j in range(2):
-                for k in range(1, 9):
-                    nr = cctv2[i][j][0]*k + r
-                    nc = cctv2[i][j][1]*k + c
-                    if nr < 0 or nr >= N or nc < 0 or nc >= M or temp_graph[nr][nc] == 6:
+    elif graph[r][c] == 2:
+        for i in cctv2:
+            new_graph = copy.deepcopy(graph)
+            for j in i:
+                for idx in range(1, 9):
+                    nr = r + j[0]*idx
+                    nc = c + j[1]*idx
+                    if nr < 0 or nr >= n or nc < 0 or nc >= m or new_graph[nr][nc] == 6:
                         break
-                    if temp_graph[nr][nc] == 0:
-                        temp_graph[nr][nc] = '#'
-                    else:
-                        continue
-            DFS(L + 1, temp_graph)
+                    if new_graph[nr][nc] == 0:
+                        new_graph[nr][nc] = '#'
+            DFS(L + 1, new_graph)
 
-    if new_graph[r][c] == 1:
-        for i in range(4):
-            temp_graph = copy.deepcopy(new_graph)
-            for j in range(1):
-                for k in range(1, 9):
-                    nr = cctv1[i][j][0]*k + r
-                    nc = cctv1[i][j][1]*k + c
-                    if nr < 0 or nr >= N or nc < 0 or nc >= M or temp_graph[nr][nc] == 6:
+    elif graph[r][c] == 3:
+        for i in cctv3:
+            new_graph = copy.deepcopy(graph)
+            for j in i:
+                for idx in range(1, 9):
+                    nr = r + j[0] * idx
+                    nc = c + j[1] * idx
+                    if nr < 0 or nr >= n or nc < 0 or nc >= m or new_graph[nr][nc] == 6:
                         break
-                    if temp_graph[nr][nc] == 0:
-                        temp_graph[nr][nc] = '#'
-                    else:
-                        continue
-            DFS(L + 1, temp_graph)
+                    if new_graph[nr][nc] == 0:
+                        new_graph[nr][nc] = '#'
+            DFS(L + 1, new_graph)
+
+    elif graph[r][c] == 4:
+        for i in cctv4:
+            new_graph = copy.deepcopy(graph)
+            for j in i:
+                for idx in range(1, 9):
+                    nr = r + j[0] * idx
+                    nc = c + j[1] * idx
+                    if nr < 0 or nr >= n or nc < 0 or nc >= m or new_graph[nr][nc] == 6:
+                        break
+                    if new_graph[nr][nc] == 0:
+                        new_graph[nr][nc] = '#'
+            DFS(L + 1, new_graph)
+    elif graph[r][c] == 5:
+        new_graph = copy.deepcopy(graph)
+        for i in cctv5:
+            for idx in range(1,9):
+                nr = r + i[0]*idx
+                nc = c + i[1]*idx
+                if nr < 0 or nr >= n or nc < 0 or nc >= m or new_graph[nr][nc] == 6:
+                    break
+                if new_graph[nr][nc] == 0:
+                    new_graph[nr][nc] = '#'
+        DFS(L+1, new_graph)
+
 
 DFS(0, graph)
 print(answer)
-
