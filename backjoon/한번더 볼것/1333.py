@@ -11,6 +11,7 @@ D : 전화 간격 ex) D초마다 1번씩 1초간 벨소리 울림
 """
 import sys
 input = lambda : sys.stdin.readline()
+input = lambda: sys.stdin.readline()
 N,L,D = map(int,input().split())
 time = []
 count = 0

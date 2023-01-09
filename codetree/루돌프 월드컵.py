@@ -17,8 +17,6 @@ def calc_score(graph):
             elif graph[i][j] == 1:
                 answer *= (arr[i]+arr[j]) / ((5 * arr[i]) + (5 * arr[j]))
 
-    answer = answer * 100
-
     return answer
 def BFS(L, graph):
     global result
@@ -48,4 +46,6 @@ def BFS(L, graph):
     BFS(L+1, graph)
 
 BFS(0, graph1)
-print(round(result, 3))
+
+print(f"{result*100:.3f}")
+

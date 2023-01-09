@@ -1,4 +1,7 @@
 백준은 입력값을 받아 제출해야함
 그냥 input()을하면 느리기 때문에 밑과 같은 방법을 사용해 작성한다.
 import sys
-input = lambda : sys.stdin.readline()
+input = lambda: sys.stdin.readline()
+
+python 재귀깊이 설정
+sys.setrecursionlimit(10**8)

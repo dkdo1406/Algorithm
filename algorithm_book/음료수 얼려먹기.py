@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('aaa.txt', 'r')
+# sys.stdin = open('aaa.txt', 'r')
 
 n,m = map(int,input().split())
 

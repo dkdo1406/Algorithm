@@ -42,3 +42,5 @@ if flag:
 else:
     answer = -1
 print(answer)
+for i in board:
+    print(i)
