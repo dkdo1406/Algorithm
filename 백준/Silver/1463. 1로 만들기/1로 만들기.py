@@ -1,14 +1,25 @@
 n = int(input())
+arr = [0] * (n+1)
+answer = n+1
 
-dp = [0 for i in range(n+1)]
+def DFS(L, result):
+    global answer
+    if answer < result[L]:
+        return
+    if L == 1:
+        answer = min(answer, result[L])
+        return
+    if L % 3 == 0:
+        if result[L // 3] == 0 or result[L // 3] > result[L] + 1:
+            result[L // 3] = result[L] + 1
+            DFS(L // 3, result)
+    if L % 2 == 0:
+        if result[L // 2] == 0 or result[L // 2] > result[L] + 1:
+            result[L // 2] = result[L] + 1
+            DFS(L // 2, result)
+    if result[L - 1] == 0 or result[L - 1] > result[L] + 1:
+        result[L-1] = result[L] + 1
+        DFS(L - 1, result)
 
-# 1일경우 횟수는 0이기 때문에 2부터 시작
-for i in range(2, n+1):
-    dp[i] = dp[i-1] + 1
-
-    if i % 3 == 0:
-        dp[i] = min(dp[i], dp[i//3] + 1)
-    if i % 2 == 0:
-        dp[i] = min(dp[i], dp[i//2] + 1)
-
-print(dp[n])
+DFS(n, arr)
+print(answer)
