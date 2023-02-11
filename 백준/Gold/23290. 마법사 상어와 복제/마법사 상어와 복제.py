@@ -1,120 +1,110 @@
-from collections import deque
-from collections import defaultdict
 import copy
+from collections import defaultdict
+from collections import deque
 M, S = list(map(int, input().split()))
-graph = [[0 for _ in range(5)] for _ in range(5)]
-fish = deque()
-fish_graph = [[defaultdict(int) for _ in range(5)] for _ in range(5)]
-for i in range(M):
-    r, c, direct = list(map(int, input().split()))
-    fish.append([r, c, direct])
-    graph[r][c] += 1
-r,c = list(map(int, input().split()))
-blood_graph = [[0 for _ in range(5)] for _ in range(5)]
-shark = [r, c]
 
-fish_dic = [[defaultdict(int) for _ in range(5)] for _ in range(5)]
-for r, c, d in fish:
-    fish_graph[r][c][d] += 1
+fish_dic = [[defaultdict(int) for _ in range(4)] for _ in range(4)]
+graph_dic = [[defaultdict(int) for _ in range(4)] for _ in range(4)]
+graph = [[0 for _ in range(4)] for _ in range(4)]
+blood_graph = [[0 for _ in range(4)] for _ in range(4)]
+for i in range(M):
+    r, c, dir = list(map(int, input().split()))
+    graph_dic[r-1][c-1][dir-1] += 1
+    graph[r-1][c-1] += 1
+
+r, c = list(map(int, input().split()))
+shark = [r-1, c-1]
 
 def copyMagic():
-    global fish_dic, fish_graph
-    fish_dic = copy.deepcopy(fish_graph)
+    global fish_dic
+    fish_dic = copy.deepcopy(graph_dic)
 
 def magic():
-    global fish_dic, fish_graph
-    for r in range(5):
-        for c in range(5):
-            for key, value in fish_dic[r][c].items():
-                fish_graph[r][c][key] += value
-                graph[r][c] += value
-
-def move():
-    global fish_graph
-    dr = [0, 0, -1, -1, -1, 0, 1, 1, 1]
-    dc = [0, -1, -1, 0, 1, 1, 1, 0, -1]
-    fish_graph = [[defaultdict(int) for _ in range(5)] for _ in range(5)]
-    for r in range(1,5):
-        for c in range(1,5):
+    global graph_dic, graph
+    for r in range(4):
+        for c in range(4):
+            if fish_dic[r][c]:
+                for dir, count in fish_dic[r][c].items():
+                    graph_dic[r][c][dir] += count
+                    graph[r][c] += count
+def moveFish():
+    global graph_dic
+    graph_dic = [[defaultdict(int) for _ in range(4)] for _ in range(4)]
+    "←, ↖, ↑, ↗, →, ↘, ↓, ↙ "
+    dr = [0, -1, -1, -1, 0, 1, 1, 1]
+    dc = [-1, -1, 0, 1, 1, 1, 0, -1]
+    for r in range(4):
+        for c in range(4):
             if fish_dic[r][c]:
                 for dir, cnt in fish_dic[r][c].items():
-                    fish_graph[r][c][dir] += cnt
-                    origin_dir = dir
+                    before_dir = dir
+                    graph_dic[r][c][before_dir] += cnt
                     for _ in range(9):
-                        if dir == 0:
-                            dir = 8
+                        if dir == -1:
+                            dir = 7
                         nr = r + dr[dir]
                         nc = c + dc[dir]
-                        if nr < 1 or nr > 4 or nc < 1 or nc > 4 or [nr, nc] == shark or blood_graph[nr][nc] != 0:
+                        if nr < 0 or nr >= 4 or nc < 0 or nc >= 4 or [nr, nc] == shark or blood_graph[nr][nc] != 0:
                             dir -= 1
                             continue
-                        fish_graph[nr][nc][dir] += cnt
-                        fish_graph[r][c][origin_dir] -= cnt
-                        if fish_graph[r][c][origin_dir] == 0:
-                            fish_graph[r][c].pop(origin_dir)
+                        graph_dic[nr][nc][dir] += cnt
+                        graph_dic[r][c][before_dir] -= cnt
+                        if graph_dic[r][c][before_dir] == 0:
+                            graph_dic[r][c].pop(before_dir)
                         graph[nr][nc] += cnt
                         graph[r][c] -= cnt
                         break
 
-def bite(L, r, c, res, pri, new_graph):
-    global ans
-    if L == -1:
-        if ans[0] < res:
-            ans = [res, pri]
-        elif ans[0] == res and ans[1] > pri:
-            ans = [res, pri]
-        return
-    dr = [0, -1, 0, 1, 0]
-    dc = [0, 0, -1, 0, 1]
-    for i in range(1, 5):
-        nr = r + dr[i]
-        nc = c + dc[i]
-        if nr < 1 or nr > 4 or nc < 1 or nc > 4:
-            continue
-        copy_graph = copy.deepcopy(new_graph)
-        score = copy_graph[nr][nc]
-        copy_graph[nr][nc] = 0
-
-        bite(L - 1, nr, nc, res + score, pri + (i * (10 ** L)), copy_graph)
-
-def move_shark(ans):
+def findFish():
     global shark
-    dr = [0, -1, 0, 1, 0]
-    dc = [0, 0, -1, 0, 1]
     r, c = shark
-    for s in str(ans):
-        r += dr[int(s)]
-        c += dc[int(s)]
-        if graph[r][c] > 0:
-            graph[r][c] = 0
-            blood_graph[r][c] = 3
-            fish_graph[r][c] = defaultdict(int)
+    dr = [-1,0,1,0]
+    dc = [0,-1,0,1]
+    q = deque()
+    copy1 = copy.deepcopy(graph)
+    q.append((r, c, [], 0, copy1))
+    ans = [9, 9, 9]
+    ans_sum = 0
+    while q:
+        r, c, dir, res, graph1 = q.popleft()
+        if len(dir) == 3:
+            if res > ans_sum:
+                ans_sum = res
+                ans = dir
+            elif ans_sum == res and ans > dir:
+                ans = dir
         else:
-            continue
+            for i in range(4):
+                nr = r + dr[i]
+                nc = c + dc[i]
+                if nr < 0 or nr >= 4 or nc < 0 or nc >= 4:
+                    continue
+                copy_graph = copy.deepcopy(graph1)
+                score = copy_graph[nr][nc]
+                copy_graph[nr][nc] = 0
+                q.append((nr, nc, dir + [i], res + score, copy_graph))
+    r, c = shark
+    for i in ans:
+        r += dr[i]
+        c += dc[i]
+        if graph[r][c] != 0:
+            graph[r][c] = 0
+            graph_dic[r][c] = defaultdict(int)
+            blood_graph[r][c] = 3
     shark = [r, c]
 
-
-def removeBlood():
-    for r in range(1, 5):
-        for c in range(1, 5):
+def blood():
+    for r in range(4):
+        for c in range(4):
             if blood_graph[r][c] != 0:
                 blood_graph[r][c] -= 1
 
-
 for _ in range(S):
-
     copyMagic()
-    move()
-
-    ans = [0, 555]
-    new_graph = copy.deepcopy(graph)
-    bite(2, shark[0], shark[1], 0, 0, new_graph)
-
-    move_shark(ans[1])
-    removeBlood()
+    moveFish()
+    findFish()
+    blood()
     magic()
-
-
 ans = 0
 for i in graph:
     ans += sum(i)
