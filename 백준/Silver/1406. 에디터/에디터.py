@@ -2,12 +2,13 @@ import sys
 input = lambda : sys.stdin.readline()
 N = input()
 M = int(input())
-dic = dict()
+
 class LinkedList:
     def __init__(self, val):
         self.val = val
         self.next = None
         self.prev = None
+
 class DLinkedList:
     def __init__(self):
         self.head = LinkedList("start")
@@ -61,17 +62,12 @@ class DLinkedList:
         self.head.next.prev = self.head.prev
         self.head = self.head.prev
 
-def printLink(link):
-    while link != None:
-        print(link.val, end= ' ')
-        link = link.prev
-
 def printAns(link):
     while link.prev != None:
         link = link.prev
     if link.val == "start":
         link = link.next
-    # print(link.next.val)
+
     while link != None:
         print(link.val, end ='')
         link = link.next
@@ -81,7 +77,6 @@ for i in N:
     if i == '\n':
         break
     link.addVal(i)
-# printLink(link.head)
 
 for _ in range(M):
     order = input().split()
@@ -89,10 +84,9 @@ for _ in range(M):
     if order[0] == 'P':
         link.insert(order[1])
         pass
-    #왼쪾 이동
+    #왼쪽 이동
     elif order[0] == 'L':
         link.moveLeft()
-
     # 오른쪽 이동
     elif order[0] == 'D':
         link.moveRight()
