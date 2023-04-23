@@ -1,24 +1,39 @@
-n = int(input())
-lst = list(map(int,input().split()))
-module = list(map(int,input().split()))
+import sys
+input = lambda : sys.stdin.readline()
 
-def dfs(cnt, result, p, m, mul, d):
-    global max_result, min_result
-    if cnt == n:
-        max_result = max(result, max_result)
-        min_result = min(result, min_result)
-    if p:
-        dfs(cnt+1, result + lst[cnt], p - 1, m, mul, d)
-    if m:
-        dfs(cnt + 1, result - lst[cnt], p, m - 1, mul, d)
-    if mul:
-        dfs(cnt + 1, result * lst[cnt], p, m, mul - 1, d)
-    if d:
-        dfs(cnt + 1, -(-result // lst[cnt]) if result < 0 else result // lst[cnt], p, m, mul, d - 1 )
+N = int(input())
+arr = list(map(int, input().split()))
+operatior = list(map(int, input().split()))
 
-result = 0
-max_result = -100000001
-min_result = 1000000001
-dfs(1, lst[0], module[0], module[1], module[2], module[3])
-print(max_result)
-print(min_result)
+min_val = 10 ** 9
+max_val = -10 ** 9
+
+def dfs(i, oper, num):
+    global min_val, max_val
+    if i == N:
+        min_val = min(min_val, num)
+        max_val = max(max_val, num)
+        return
+    if oper[0] > 0:
+        oper[0] -= 1
+        dfs(i + 1, oper, num + arr[i])
+        oper[0] += 1
+    if oper[1] > 0:
+        oper[1] -= 1
+        dfs(i + 1, oper, num - arr[i])
+        oper[1] += 1
+    if oper[2] > 0:
+        oper[2] -= 1
+        dfs(i + 1, oper, num * arr[i])
+        oper[2] += 1
+    if oper[3] > 0:
+        oper[3] -= 1
+        if num < 0 or arr[i] < 0:
+            dfs(i + 1, oper, -(abs(num) // abs(arr[i])))
+        else:
+            dfs(i + 1, oper, (abs(num) // abs(arr[i])))
+        oper[3] += 1
+
+dfs(1, operatior, arr[0])
+print(max_val)
+print(min_val)
