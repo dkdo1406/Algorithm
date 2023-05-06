@@ -15,7 +15,7 @@ for r in range(N - 2, -1, -1):
     for c in range(N - 2, -1, -1):
         graph[r][c] += graph[r + 1][c] + graph[r][c + 1] - graph[r + 1][c + 1]
 
-for i in range(M):
+for _ in range(M):
     r1, c1, r2, c2 = list(map(int, input().split()))
     res = graph[r1-1][c1-1]
     if r2 != N and c2 != N:
@@ -24,7 +24,4 @@ for i in range(M):
         res -= graph[r2][c1-1]
     elif c2 != N:
         res -= graph[r1-1][c2]
-    ans[i] = res
-
-for i in ans:
-    print(i)
+    print(res)
