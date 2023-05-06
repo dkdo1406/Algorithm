@@ -1,12 +1,8 @@
 import sys
-input = lambda : sys.stdin.readline()
+input = lambda: sys.stdin.readline()
 
 N, M = list(map(int, input().split()))
-
-ans = [0] * M
-graph = []
-for _ in range(N):
-    graph.append(list(map(int, input().split())))
+graph = [list(map(int, input().split())) for _ in range(N)]
 
 for r in range(N - 2, -1, -1):
     graph[r][N - 1] += graph[r + 1][N - 1]
