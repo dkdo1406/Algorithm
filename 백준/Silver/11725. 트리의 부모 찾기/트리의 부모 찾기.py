@@ -16,7 +16,7 @@ while q:
         for n_node in node_set[str(node)]:
             ans[n_node] = node
             node_set[str(n_node)].remove(node)
-            q.append(n_node)
+            q.appendleft(n_node)
 
 for i in range(2, N+1):
     print(ans[i])
