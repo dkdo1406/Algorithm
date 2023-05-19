@@ -7,10 +7,8 @@ room = []
 for _ in range(n):
     i, j = list(map(int, input().split()))
     classroom.append((i, j))
-    # heapq.heappush(room, (j, i))
-    # classroom.append(list(map(int, input().split())))
+
 classroom.sort(key=lambda x: x[0])
-# end, start = heapq.heappop(room)
 for i, j in classroom:
     if not room:
         heapq.heappush(room, j)
