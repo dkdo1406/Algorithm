@@ -28,12 +28,12 @@ def check(mid):
     return cnt <= M
 
 
-while l <= r:
+while l < r:
     c = (l + r) // 2
     if check(c):
-        r = c - 1
+        r = c
         res = c
     else:
         l = c + 1
 
-print(res)
+print(l)
