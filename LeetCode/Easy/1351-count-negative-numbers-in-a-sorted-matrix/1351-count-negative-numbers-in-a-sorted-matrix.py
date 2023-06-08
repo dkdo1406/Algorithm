@@ -8,5 +8,7 @@ class Solution:
             else:
                 ans += len(grid[0]) - n
                 m -= 1
+                if m >= 0 and grid[m][-1] >= 0:
+                    break
                 
         return ans
