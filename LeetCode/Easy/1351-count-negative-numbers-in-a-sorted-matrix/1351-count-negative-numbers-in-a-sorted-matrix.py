@@ -8,4 +8,5 @@ class Solution:
             else:
                 ans += len(grid[0]) - n
                 m -= 1
+                
         return ans
