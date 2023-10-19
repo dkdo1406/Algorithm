@@ -54,13 +54,9 @@ public class Main {
             for (int dir = 0; dir < 4; dir++) {
                 nr = r + dr[dir];
                 nc = c + dc[dir];
-                // 범위 넘어가면 continue
-                if (nr < 0 || nr >= N || nc < 0 || nc >= M) continue;
-                // 벽이거나 이전에 방문한 위치면 pass
-                if (graph[nr][nc] != 1) continue;
+                // 그래프를 넘어가거나 벽이거나 이전에 방문한 위치면 Continue
+                if (nr < 0 || nr >= N || nc < 0 || nc >= M || graph[nr][nc] != 1) continue;
                 graph[nr][nc] += graph[r][c];
-                // 도착했으므로 리턴
-                if (nr == N - 1 && nc == M - 1) return;
                 queue.offer(new Integer[] {nr, nc});
             }
         }
