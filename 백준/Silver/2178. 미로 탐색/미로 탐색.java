@@ -57,7 +57,7 @@ public class Main {
                 // 범위 넘어가면 continue
                 if (nr < 0 || nr >= N || nc < 0 || nc >= M) continue;
                 // 벽이거나 이전에 방문한 위치면 pass
-                if (graph[nr][nc] == 0 || graph[nr][nc] > 1) continue;
+                if (graph[nr][nc] != 1) continue;
                 graph[nr][nc] += graph[r][c];
                 // 도착했으므로 리턴
                 if (nr == N - 1 && nc == M - 1) return;
