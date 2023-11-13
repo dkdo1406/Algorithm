@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * BOJ_2178_미로탐색_김형중
+ * BOJ_1337_올바른 배열_김형중
  *
  * 문제
  * 올바른 배열 : 원소 중 5개가 연속적인 것을 뜻함
@@ -10,7 +10,8 @@ import java.util.*;
  *
  *
  * 접근 방법
- * BFS를 사용하여 탐색.
+ * 배열에 모두 받은 후 오름차순으로 정렬한다.
+ * 투 포인터를 사용하여 arr[l]에 맞는지 확인한다.
  *
  */
 public class Main {
@@ -35,21 +36,21 @@ public class Main {
         Arrays.sort(arr);
         int l = 0;
         int r = 0;
-        int res = 5;
-        int ans = 5;
+        int res = 5; // 시작값
+        int ans = 5; // 결과 최대값
         while (l < N) {
+            // arr[l]이 기준값이며 arr[r]이 이 안에 들어는지 확인한다.
             while (r < N && arr[l] + 4 >= arr[r]) {
+                // 올바른 배열이 맞다면 r을 1 증가시켜주고 결과값을 1을 감소시킨다.
                 r += 1;
                 res -= 1;
-                ans = Math.min(ans, res);
             }
+            // 결과값중 최소값으로 입력한다.
+            ans = Math.min(ans, res);
+            // 모든 비교가 끝났기에 다시 1 증가시켜준다.
             res += 1;
             l += 1;
         }
-//        System.out.println(Arrays.toString(arr));
-
-
-
 
         System.out.println(ans);
     }
