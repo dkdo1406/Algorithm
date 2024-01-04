@@ -13,7 +13,7 @@ public class Main {
 
         int N = Integer.parseInt(st.nextToken());
         int speed[] = new int[N];
-        int ans = 0;
+        long ans = 0;
 
         st = new StringTokenizer(br.readLine().trim());
         for (int idx = 0; idx < N; idx++) {
