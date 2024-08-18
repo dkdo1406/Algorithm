@@ -11,7 +11,6 @@ class Solution {
             } else {
                 return false;
             }
-            System.out.println(n);
         }
         return true;
     }
