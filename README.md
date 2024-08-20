@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0040-combination-sum-ii](https://github.com/dkdo1406/Algorithm/tree/master/0040-combination-sum-ii) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
+| [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Hash Table
 |  |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0263-ugly-number](https://github.com/dkdo1406/Algorithm/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
+| [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 ## Matrix
 |  |
 | ------- |
@@ -68,4 +70,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
+| [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
+## Game Theory
+|  |
+| ------- |
+| [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 <!---LeetCode Topics End-->
