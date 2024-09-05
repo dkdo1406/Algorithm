@@ -94,5 +94,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
+## String
+|  |
+| ------- |
+| [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
 <!---LeetCode Topics End-->
