@@ -7,7 +7,7 @@ class Solution {
         }
         // 가능한지 확인
         int isPossible = (mean * (n + m)) - sum;
-        if (isPossible > 6 * n || isPossible / n == 0 || isPossible <= 0) return new int[0];
+        if (isPossible > 6 * n || isPossible < n) return new int[0];
         int[] res = new int[n];
         for (int idx = 0; idx < n; idx++) {
             res[idx] = isPossible / (n - idx);
