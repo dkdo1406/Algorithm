@@ -9,7 +9,6 @@ class Solution {
         for (int[] obstacle : obstacles) {
             block.add(new Point(obstacle[1], obstacle[0]));
         }
-        // System.out.println(block);
         for (int command : commands) {
             if (command == -1) {
                 dir = (dir + 1) % 4;
@@ -29,7 +28,6 @@ class Solution {
                 }
                 res = Math.max(res, robot[0] * robot[0] + robot[1] * robot[1]);
             }
-            // System.out.println(Arrays.toString(robot));
         }
         
         return res;
