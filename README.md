@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
@@ -33,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -100,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
+| [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 ## String
 |  |
