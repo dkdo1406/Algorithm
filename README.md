@@ -11,12 +11,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Math
 |  |
 | ------- |
@@ -103,4 +105,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
+## Linked List
+|  |
+| ------- |
+| [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 <!---LeetCode Topics End-->
