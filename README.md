@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
+| [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
 |  |
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
+| [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -109,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
+| [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 ## String
 |  |
 | ------- |
@@ -117,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1484-linked-list-in-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1484-linked-list-in-binary-tree) |
+| [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/dkdo1406/Algorithm/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Number Theory
