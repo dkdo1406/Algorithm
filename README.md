@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0263-ugly-number](https://github.com/dkdo1406/Algorithm/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/dkdo1406/Algorithm/tree/master/0650-2-keys-keyboard) |
+| [0670-maximum-swap](https://github.com/dkdo1406/Algorithm/tree/master/0670-maximum-swap) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
@@ -127,4 +128,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/dkdo1406/Algorithm/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
+## Greedy
+|  |
+| ------- |
+| [0670-maximum-swap](https://github.com/dkdo1406/Algorithm/tree/master/0670-maximum-swap) |
 <!---LeetCode Topics End-->
