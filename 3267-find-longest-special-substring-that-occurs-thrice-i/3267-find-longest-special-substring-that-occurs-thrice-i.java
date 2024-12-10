@@ -5,96 +5,72 @@ class Solution {
         // 최소 3번은 같은숫자가 나타나야 포함시킴.
 
         Set<Character> chars = new HashSet<>();
-        Map<Character, List<Integer>> charMap = new HashMap<>();
         Map<Character, Integer> charCnt = new HashMap<>();
 
-        
-        boolean check = false;
         char curr = s.charAt(0);
         int maxCnt = 1;
         int ans = -1;
+        int alpha;
+        // 배열을 3중으로 만든다.
+        int[][][] abc = new int[26][51][1];
+        chars.add(curr);
+        
         List temp = new LinkedList<Integer>();
         for (int i = 1; i < s.length(); i++) {
+            chars.add(s.charAt(i));
+            if (!charCnt.containsKey(curr)) {
+                charCnt.put(curr, 0);
+            }
+            // 이전값과 다르다면
             if (curr != s.charAt(i)) {
-                temp = new LinkedList<Integer>();
-                if (!charMap.containsKey(curr)) {
-                    temp.add(maxCnt);
-                    charMap.put(curr, temp);
-                } else {
-                    temp = charMap.get(curr);
-                    temp.add(maxCnt);
-                    
-                    charMap.replace(curr, temp);
-                }
+                alpha = curr - 'a';
                 
+                charCnt.replace(curr, Math.max(charCnt.get(curr), maxCnt));
+                for (int idx = 0; idx < maxCnt; idx++) {
+                    abc[alpha][idx + 1][0] += maxCnt - idx;
+                }
 
                 curr = s.charAt(i);
                 maxCnt = 1;
+                
+                // 마지막 값이라면
                 if (i == s.length() - 1) {
-                    if (!charMap.containsKey(curr)) {
-                        charMap.put(curr, new LinkedList<Integer>());
+                    if (!charCnt.containsKey(curr)) {
+                        charCnt.put(curr, 0);
                     }
-                    temp = charMap.get(curr);
-                    temp.add(maxCnt);
-                    
-                    charMap.replace(curr, temp);
+                    alpha = curr - 'a';
+                    charCnt.replace(curr, Math.max(charCnt.get(curr), maxCnt));
+                    for (int idx = 0; idx < maxCnt; idx++) {
+                        abc[alpha][idx + 1][0] += maxCnt - idx;
+                    }
                 }
 
             } else {
+                // 이전값과 같다면
                 maxCnt += 1;
-                if (i == s.length() - 1 && curr == s.charAt(i)) {
-                    temp = charMap.get(curr);
-                    temp.add(maxCnt);
-                    
-                    charMap.replace(curr, temp);
+                
+                // 마지막 값이라면
+                if (i == s.length() - 1) {
+                    charCnt.replace(curr, Math.max(charCnt.get(curr), maxCnt));
+                    alpha = curr - 'a';
+                    for (int idx = 0; idx < maxCnt; idx++) {
+                        abc[alpha][idx + 1][0] += maxCnt - idx;
+                    }
                 }
             }
-            
-            if (chars.contains(curr)) {
-                
-                check = true;
-            }
-            chars.add(curr);
-            if (!charMap.containsKey(curr)) {
-                charMap.put(curr, new LinkedList<Integer>());
-            }
-            // System.out.println(curr);
         }
 
-        // charMap.put(1, chars);
-        
-        int[] aa;
-        for (Character c : charMap.keySet()) {
-            aa = new int[51];
-            System.out.println("시작");
-            System.out.println(c);
-            temp = charMap.get(c);
-            System.out.println(temp);
-
-            Collections.sort(temp);
-            System.out.println(temp);
-            if (temp == null) {
-                continue;
-            }
-            Integer maxValue = (Integer)temp.getLast();
-            // int minValue = temp.indexOf(1);
-            System.out.println("minValue");
-            System.out.println(maxValue);
-            for (int i : (List<Integer>)temp) {
-                for (int idx = 0; idx < i; idx++) {
-                    aa[idx + 1] += i - idx;
-                }
-            }
-            for (int idx = maxValue; idx >= 1; idx--) {
-                if (aa[idx] >= 3) {
+        for (Character c : charCnt.keySet()) {
+            int al = c - 'a';
+            
+            for (int idx = charCnt.get(c); idx >= 1; idx--) {
+                if (abc[al][idx][0] >= 3) {
                     ans = Math.max(ans, idx);
                     break;
                 }
             }
-            System.out.println(Arrays.toString(aa));
         }
-        
-        System.out.println(check);
+
         
         
        
