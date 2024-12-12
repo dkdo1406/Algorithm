@@ -6,12 +6,12 @@ class Solution {
         // 같은값이 최대 몇개있는지 리턴하라.
 
        Arrays.sort(nums);
-       int l, r, c, lNum, rNum, cnt;
+       int l, r, c, lNum, rNum;
        int ans = 0;
        for (int idx = 0; idx < n; idx++) {
         l = idx;
         r = n - 1;
-        cnt = 1;
+        c = (l + r) / 2;
         lNum = nums[idx] + k;
         
         while (l <= r) {
@@ -23,8 +23,11 @@ class Solution {
             } else {
                 l = c + 1; 
             }
+            c = Math.max(l, r);
+            if (ans >= c) break;
         }
-        // 최종 r 위치
+        // 최종 l 위치
+
         ans = Math.max(ans, l - idx);
        }
         
