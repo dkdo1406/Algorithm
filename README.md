@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
 |  |
@@ -74,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Binary Tree
 |  |
 | ------- |
@@ -115,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## String
 |  |
 | ------- |
