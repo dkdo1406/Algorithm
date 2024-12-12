@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
+| [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
 |  |
@@ -69,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Heap (Priority Queue)
 |  |
@@ -141,9 +143,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Counting
 |  |
 | ------- |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
+## Sorting
+|  |
+| ------- |
+| [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 <!---LeetCode Topics End-->
