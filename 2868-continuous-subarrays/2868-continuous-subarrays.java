@@ -9,6 +9,7 @@ class Solution {
         int l = 0;
         int r = 0;
         int[] rank = new int[5];
+        int[] val = new int[2];
         for (int idx = 0; idx < 5; idx++) {
             rank[idx] = -1;
         }
@@ -60,10 +61,9 @@ class Solution {
 
                     }
                     ans -= (long)(1 + r - l) * (r - l) / 2;
-                    int[] val = findVal(l, rank, nums);
+                    val = findVal(l, rank, nums);
                     maxIdx = val[0];
                     minIdx = val[1];
-
                 }
                 if (nums[r] >= nums[maxIdx]) {
                     maxIdx = r;
@@ -101,9 +101,9 @@ class Solution {
         // r이 이동한거라면
         if (curr == past) {
             if (nums[l] <= nums[r]) {
-                rank[2 + nums[r] - nums[l]] = Math.max(l, r);
+                rank[2 + nums[r] - nums[l]] = r;
             } else {
-                rank[2 - (nums[l] - nums[r])] = Math.max(l, r);
+                rank[2 - (nums[l] - nums[r])] = r;
             }
         } else {
             // 두 값의 차이를 찾는다.
@@ -118,7 +118,6 @@ class Solution {
                     } else {
                         rank[idx] = rank[idx + diff];
                     }
-                    
                 }
             } else {
                 for (int idx = 0; idx < 5; idx++) {
@@ -130,9 +129,6 @@ class Solution {
                 }
             }
         }
-
-        
-
         return rank;
 
     }
@@ -143,8 +139,9 @@ class Solution {
         int[] val = new int[2];
         val[0] = index;
         val[1] = index;
+
         for (int idx = 0; idx < 5; idx++) {
-            if (rank[idx] == -1 || rank[idx] < index) continue;
+            if (rank[idx] < index) continue;
             if (maxVal <= nums[rank[idx]]) {
                 maxVal = nums[rank[idx]];
                 val[0] = rank[idx];
