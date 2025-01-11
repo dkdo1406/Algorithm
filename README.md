@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/dkdo1406/Algorithm/tree/master/0040-combination-sum-ii) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
+| [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
@@ -24,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
+| [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
@@ -130,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
