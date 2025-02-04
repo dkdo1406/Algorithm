@@ -13,13 +13,14 @@ public class Main {
         int N =  Integer.parseInt(st.nextToken());
         st = new StringTokenizer(br.readLine().trim());
         String S = st.nextToken();
-        // int r = 31;
+        double r = 1;
         double M = 1234567891;
-        double ans = 0;
-        int[] r = new int[] {1, 31, 31*31, 31*31*31, 31*31*31*31};
+        double ans = S.charAt(0) - 96;
         
-        for (int idx = 0; idx < N; idx++) {
-            ans += (S.charAt(idx)-96) * r[idx];
+        for (int idx = 1; idx < N; idx++) {
+            r *= 31;
+            r %= M;
+            ans += (S.charAt(idx)-96) * r;
         }
         System.out.println((int)(ans % M));
         
