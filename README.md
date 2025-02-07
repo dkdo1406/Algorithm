@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
+| [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/dkdo1406/Algorithm/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0870-magic-squares-in-grid](https://github.com/dkdo1406/Algorithm/tree/master/0870-magic-squares-in-grid) |
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
+| [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
@@ -162,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Sorting
