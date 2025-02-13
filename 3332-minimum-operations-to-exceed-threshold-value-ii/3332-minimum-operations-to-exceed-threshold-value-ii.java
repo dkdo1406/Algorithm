@@ -8,8 +8,8 @@ class Solution {
         }
         double a,b;
         while(q.size() > 0) {
-            if (q.peek() >= k) break;
             a = q.poll();
+            if(a >= k) break;
             b = q.poll();
             q.offer(a * 2 + b);
             ans += 1;
