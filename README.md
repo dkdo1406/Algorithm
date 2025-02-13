@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/dkdo1406/Algorithm/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/dkdo1406/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Hash Table
 |  |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/dkdo1406/Algorithm/tree/master/2868-continuous-subarrays) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/dkdo1406/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Binary Tree
 |  |
 | ------- |
@@ -135,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/dkdo1406/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## String
 |  |
 | ------- |
