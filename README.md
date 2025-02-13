@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/dkdo1406/Algorithm/tree/master/2868-continuous-subarrays) |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/dkdo1406/Algorithm/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -86,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/dkdo1406/Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/dkdo1406/Algorithm/tree/master/2868-continuous-subarrays) |
@@ -170,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/dkdo1406/Algorithm/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 ## Queue
