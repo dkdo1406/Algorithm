@@ -1,12 +1,12 @@
 class Solution {
     public int minOperations(int[] nums, int k) {
         int ans = 0;
-        Queue<Double> q = new PriorityQueue<>();
+        Queue<Long> q = new PriorityQueue<>();
 
         for(int num : nums) {
-            q.offer((double)num);
+            q.offer((long)num);
         }
-        double a,b;
+        long a,b;
         while(q.size() > 0) {
             a = q.poll();
             if(a >= k) break;
