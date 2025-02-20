@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/dkdo1406/Algorithm/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/dkdo1406/Algorithm/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/dkdo1406/Algorithm/tree/master/2155-find-missing-observations) |
 | [2411-spiral-matrix-iv](https://github.com/dkdo1406/Algorithm/tree/master/2411-spiral-matrix-iv) |
@@ -32,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
+| [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/dkdo1406/Algorithm/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
@@ -107,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0040-combination-sum-ii](https://github.com/dkdo1406/Algorithm/tree/master/0040-combination-sum-ii) |
+| [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -144,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/dkdo1406/Algorithm/tree/master/2076-sum-of-digits-of-string-after-convert) |
+| [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/dkdo1406/Algorithm/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Linked List
 |  |
