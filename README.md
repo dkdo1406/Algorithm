@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0906-walking-robot-simulation](https://github.com/dkdo1406/Algorithm/tree/master/0906-walking-robot-simulation) |
 | [0952-word-subsets](https://github.com/dkdo1406/Algorithm/tree/master/0952-word-subsets) |
 | [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1502-construct-k-palindrome-strings](https://github.com/dkdo1406/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/dkdo1406/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -59,11 +60,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1484-linked-list-in-binary-tree) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1484-linked-list-in-binary-tree) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Strongly Connected Component
@@ -74,11 +77,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1484-linked-list-in-binary-tree) |
 ## Design
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -100,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/dkdo1406/Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/dkdo1406/Algorithm/tree/master/1484-linked-list-in-binary-tree) |
 ## Data Stream
 |  |
