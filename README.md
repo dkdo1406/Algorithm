@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
 | [1364-tuple-with-same-product](https://github.com/dkdo1406/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/dkdo1406/Algorithm/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/dkdo1406/Algorithm/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/dkdo1406/Algorithm/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/dkdo1406/Algorithm/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2107-find-unique-binary-string](https://github.com/dkdo1406/Algorithm/tree/master/2107-find-unique-binary-string) |
@@ -122,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/dkdo1406/Algorithm/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/dkdo1406/Algorithm/tree/master/0650-2-keys-keyboard) |
 | [1240-stone-game-ii](https://github.com/dkdo1406/Algorithm/tree/master/1240-stone-game-ii) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/dkdo1406/Algorithm/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 ## Prefix Sum
 |  |
 | ------- |
