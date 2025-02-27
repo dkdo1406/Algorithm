@@ -2,13 +2,10 @@ class Solution {
     public int lenLongestFibSubseq(int[] arr) {
         // 가장긴 피보나치 개수
         int ans = 0;
-        Map<Integer, Integer> map = new HashMap<>();
         Set<Integer> set = new HashSet<>();
         for (int num : arr) {
-            map.put(num, 0);
             set.add(num);
         }
-        
         int sum = 0;
         int val1 = 0;
         int val2 = 0;
@@ -19,9 +16,7 @@ class Solution {
                 val2 = arr[r];
                 sum = val1 + val2;
                 cnt = 2;
-                while(map.containsKey(sum)) {
-                    // 피보나치 시작
-                    map.replace(sum, Math.max(map.get(sum), map.get(val1) + 1));
+                while(set.contains(sum)) {
                     val1 = val2;
                     val2 = sum;
                     sum = val1 + val2;
